@@ -1,14 +1,14 @@
 {
-    "name":  "shieldofstamina",
-    "version-string":  "1.0.0",
-    "description":  "",
-    "license":  "MIT",
-    "dependencies":  [
-                         "spdlog"
-                     ],
-    "features":  {
-                     "mo2-install":  {
-                                         "description":  "ShieldOfStamina"
-                                     }
-                 }
+  "name": "shieldofstaminavr",
+  "version-string": "1.0.0",
+  "description": "VR support for Shield of Stamina",
+  "homepage": "https://github.com/jc43081/ShieldOfStaminaVR",
+  "license": "MIT",
+  "dependencies": [
+    "boost-atomic",
+    "boost-stl-interfaces",
+    "rsm-binary-io",
+    "clib-util",
+    "spdlog"
+  ]
 }

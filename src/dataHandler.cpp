@@ -1,10 +1,10 @@
 #include "dataHandler.h"
-#include "SimpleIni.h"
+
 void dataHandler::readSettings() {
-	INFO("reading settings");
+	logger::info("reading settings");
 	using namespace settings;
 	CSimpleIniA ini;
-#define SETTINGFILE_PATH "Data\\SKSE\\Plugins\\ShieldOfStamina.ini"
+#define SETTINGFILE_PATH "Data\\SKSE\\Plugins\\ShieldOfStaminaVR.ini"
 	ini.LoadFile(SETTINGFILE_PATH);
 	bckShdStaminaMult_PC_Block_NPC = static_cast<float>(ini.GetLongValue("General", "bckShdStaminaMult_PC_Block_NPC", 1));
 	bckWpnStaminaMult_PC_Block_NPC = static_cast<float>(ini.GetLongValue("General", "bckWpnStaminaMult_PC_Block_NPC", 1));
